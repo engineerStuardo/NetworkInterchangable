@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B404680B2A3C767A005F2B5A /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = B404680A2A3C767A005F2B5A /* users.json */; };
+		B404680D2A3C768D005F2B5A /* Localservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404680C2A3C768D005F2B5A /* Localservice.swift */; };
+		B404680F2A3C7A87005F2B5A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404680E2A3C7A87005F2B5A /* NetworkService.swift */; };
 		B49313F22A3BE54600056099 /* NetworkInterchangableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49313F12A3BE54600056099 /* NetworkInterchangableApp.swift */; };
 		B49313F42A3BE54600056099 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49313F32A3BE54600056099 /* ContentView.swift */; };
 		B49313F62A3BE54700056099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49313F52A3BE54700056099 /* Assets.xcassets */; };
 		B49313F92A3BE54700056099 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49313F82A3BE54700056099 /* Preview Assets.xcassets */; };
+		B49314012A3C6C1A00056099 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49314002A3C6C1A00056099 /* UserModel.swift */; };
+		B49314042A3C6C2C00056099 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49314032A3C6C2C00056099 /* Webservice.swift */; };
+		B49314072A3C6FFE00056099 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49314062A3C6FFE00056099 /* UserViewModel.swift */; };
+		B493140A2A3C710400056099 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49314092A3C710400056099 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B404680A2A3C767A005F2B5A /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		B404680C2A3C768D005F2B5A /* Localservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localservice.swift; sourceTree = "<group>"; };
+		B404680E2A3C7A87005F2B5A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B49313EE2A3BE54600056099 /* NetworkInterchangable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInterchangable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49313F12A3BE54600056099 /* NetworkInterchangableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterchangableApp.swift; sourceTree = "<group>"; };
 		B49313F32A3BE54600056099 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B49313F52A3BE54700056099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49313F82A3BE54700056099 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B49314002A3C6C1A00056099 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B49314032A3C6C2C00056099 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		B49314062A3C6FFE00056099 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B49314092A3C710400056099 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,11 @@
 		B49313F02A3BE54600056099 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				B404680A2A3C767A005F2B5A /* users.json */,
+				B49314082A3C70F700056099 /* Constants */,
+				B49314052A3C6C3400056099 /* ViewModel */,
+				B49314022A3C6C1E00056099 /* Service */,
+				B49313FF2A3C6C0200056099 /* Model */,
 				B49313F12A3BE54600056099 /* NetworkInterchangableApp.swift */,
 				B49313F32A3BE54600056099 /* ContentView.swift */,
 				B49313F52A3BE54700056099 /* Assets.xcassets */,
@@ -65,6 +84,40 @@
 				B49313F82A3BE54700056099 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B49313FF2A3C6C0200056099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B49314002A3C6C1A00056099 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B49314022A3C6C1E00056099 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B49314032A3C6C2C00056099 /* Webservice.swift */,
+				B404680C2A3C768D005F2B5A /* Localservice.swift */,
+				B404680E2A3C7A87005F2B5A /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B49314052A3C6C3400056099 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B49314062A3C6FFE00056099 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B49314082A3C70F700056099 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B49314092A3C710400056099 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B404680B2A3C767A005F2B5A /* users.json in Resources */,
 				B49313F92A3BE54700056099 /* Preview Assets.xcassets in Resources */,
 				B49313F62A3BE54700056099 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B404680D2A3C768D005F2B5A /* Localservice.swift in Sources */,
 				B49313F42A3BE54600056099 /* ContentView.swift in Sources */,
+				B404680F2A3C7A87005F2B5A /* NetworkService.swift in Sources */,
+				B49314012A3C6C1A00056099 /* UserModel.swift in Sources */,
+				B49314042A3C6C2C00056099 /* Webservice.swift in Sources */,
+				B49314072A3C6FFE00056099 /* UserViewModel.swift in Sources */,
 				B49313F22A3BE54600056099 /* NetworkInterchangableApp.swift in Sources */,
+				B493140A2A3C710400056099 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
